@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import WeatherDisplay from "./components/WeatherDisplay.jsx";
+import WeatherDisplay from "./Components/WeatherDisplay.jsx";
 import Forecast from "./components/Forecast.jsx";
 import SearchBar from "./components/SearchBar.jsx";
 
@@ -46,10 +46,10 @@ export default function App() {
   };
 
   return (
-    <div className="bg-[#222222] flex justify-center items-center min-h-screen text-white">
-      <div className="max-w-sm mx-auto p-4 text-center bg-[#8e8282] rounded-2xl shadow-lg">
+    <div className="bg-[#717b85] flex justify-center items-center min-h-screen text-black">
+      <div className="max-w-sm mx-auto p-4 text-center bg-[#77bde3] rounded-2xl shadow-lg">
         <h1 className="text-2xl font-bold mb-4">
-          🌦 Weather App {weather ? `- ${weather.name}` : ""}
+          Weather App {weather ? `- ${weather.name}` : ""}
         </h1>
         
         <SearchBar onSearch={fetchWeather} />
